@@ -1,0 +1,37 @@
+# Station whitelist: maps LGA to radio stations that are genuinely broadcast there.
+# TO BE CONFIRMED before running the placebo check in production.
+#
+# How this is used:
+#   If a respondent's placebo station IS in this list for their LGA, the station
+#   should not have been used as a placebo → likely the enumerator entered the
+#   wrong participant ID (causing the form to pull the wrong station assignment).
+#   If the placebo station is NOT in this list, the respondent may be fabricating
+#   listenership (honesty concern).
+#
+# Name variants: 'Radio Sarounia' and 'Radio Saraounia' appear in the data and
+# may be the same station. Both are listed below — update once confirmed.
+#
+# lga values must match exactly what appears in the lga_pull column of cleaned_data.csv.
+state,lga,station_name
+Maradi,Dakoro,Hadin Kay Dakoro
+Maradi,Tagriss,Hadin Kay
+Tahoua,Tchintabaraden,Radio Azawak (La Voix de l'Azawak)
+Tahoua,Malbaza,Mouriyar karkara	
+Tahoua,Bangui,Radio Fadama
+Tahoua,Badaguishiri,Bidizguiri
+Tahoua,Bouza,Ta Karkara (ou Takarkara)
+Maradi,Aguié,Zumunci
+Maradi,Mayayi (ou Mayahi),Annuri
+Maradi,Kornaka,Gyaré
+Zinder,Zinder,Alternative FM
+Zinder,Belbedji,Radio Tarka
+Zinder,Damagaram Takeya,Kutukum (ou Koutoukoum)
+Zinder,Washa,Radio Darnako	
+Zinder,Magaria,Kitari
+Zinder,Kantché,Radio Tsirkao FM (ou Tsirkau)
+Zinder,Kéllé,Radio Communautaire Aoulaye
+Zinder,Guidimouni,Aissami
+Zinder,Yaouri / Yawiri,Radio Mai Tama
+Maradi,MaradiAnfani Maradi
+Zinder,Zinder,Anfani Zinder
+Maradi,Aguié,Hadin Kay Aguié		
