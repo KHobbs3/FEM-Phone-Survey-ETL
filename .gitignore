@@ -1,0 +1,93 @@
+# FEM-Phone-Survey-ETL -- one branch per country, checked out at <Country>/2_phone pulse/.
+# Only code and documentation are tracked.
+
+# ── Participant data (GDPR / consent commitments): never commit ─────────────────
+data/
+**/outputs/
+*_WIDE*
+**/radio_matching/
+# Per-respondent QA decisions (keep lists, manual flags) stay local
+q_a/reference_data/*
+# Forms, airing plans, budgets: internal working files
+meta/
+
+# Any data-like file anywhere, unless allowlisted at the end of this file
+*.csv
+*.tsv
+*.txt
+*.xlsx
+*.xlsm
+*.xls
+*.ods
+*.json
+*.dta
+*.sav
+*.rds
+*.RData
+*.rda
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.h5
+*.db
+*.sqlite
+*.zip
+*.gz
+*.7z
+
+# Notebooks can carry respondent rows in their outputs
+*.ipynb
+.ipynb_checkpoints/
+
+# Audio audits / recordings, images and exported figures
+*.m4a
+*.mp3
+*.wav
+*.aac
+*.amr
+*.ogg
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# Reports and office documents
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.pdf
+*.odt
+~$*
+.~lock.*#
+
+# ── Hidden / system / tooling files ─────────────────────────────────────────────
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+.env.*
+*.log
+*.swp
+.vscode/
+.idea/
+.Rhistory
+.Rapp.history
+.claude/settings.local.json
+
+# ── Allowlist (safe, non-respondent files) ───────────────────────────────────────
+!linkage/Indicator comparison map - baseline vs phone.xlsx
+!q_a/reference_data/station_whitelist.csv
+!requirements.txt
+!.claude/settings.json
